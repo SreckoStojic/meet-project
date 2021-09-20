@@ -3,8 +3,8 @@
 }
 
 body {
-   background-color: #F2F2F2;;
-}
+   background-color: #F2F2F2;
+}  
 
 .css-main {
     width: 100%;
@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 .css-meet-logo {
     margin-top: 50px;
@@ -64,6 +65,17 @@ body {
     margin-top: 80px;
 }
 
+@media screen and (max-width: 400px) {
+    .css-group-chat {
+        display: grid;
+        grid-template-areas: 
+            "a c"
+            "b b";
+        width: 340px;
+        height: auto;
+    }
+}
+
 .css-group-chat-a {
     grid-area: a;
 }
@@ -81,6 +93,38 @@ body {
     grid-area: c;
 }
 
+@media screen and (max-width: 400px) {
+    .css-group-chat-a img{
+        width: 150px;
+        height: auto;
+    }
+
+    .css-group-chat-b {
+        flex-direction: row;
+        width: 340px;
+        height: auto;
+    }
+    
+    .css-group-chat-c img{
+        width: 150px;
+        height: auto;
+
+    }
+}
+
+.css-group-chat-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 400px) {
+    .css-group-chat-buttons {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .css-pictures {
     display: grid;
     grid-template-areas: "a b c d";
@@ -88,6 +132,18 @@ body {
     width: 1110px;
     grid-gap: 20px;
     margin-top: 70px;
+}
+
+@media screen and (max-width: 400px) {
+    .css-pictures {
+        display: grid;
+        grid-template-areas:
+                "a b"
+                "c d";
+        height: auto;
+        width: 327px;
+        grid-gap: 5px;
+    }
 }
 
 .css-pictures-a {
@@ -111,6 +167,13 @@ body {
     height: 242px;
 }
 
+@media screen and (max-width: 400px) {
+    .css-pictures img {
+        width: 151px;
+        height: 143px;
+    }
+}
+
 .css-description {
     display: flex;
     flex-wrap: wrap;
@@ -118,8 +181,6 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    /*width: 540px;
-    height: 240px;*/
 }
 
 footer {
@@ -130,6 +191,16 @@ footer {
     height: 308px;
     background-image: url(assets/desktop/image-footer.jpg);
 }
+
+@media screen and (max-width: 400px) {
+    footer {
+        width: 375px;
+        height: 436px;
+        background-repeat: no-repeat;
+        background-image: url(assets/mobile/image-footer.jpg);
+    }
+}
+
 
 footer .css-footer-flex {
     display: flex;
@@ -142,6 +213,12 @@ footer .css-footer-flex {
     opacity: 0.8;   
 }
 
+@media screen and (max-width: 400px) {
+    footer .css-footer-flex {
+        flex-direction: column;
+    }
+}
+
 .css-download-btn {
     border-radius: 20px;
     color: white;
@@ -150,7 +227,7 @@ footer .css-footer-flex {
     height: 58px;
     font-size: 16px;
     border: 1px solid white;
-
+    cursor: pointer;
 }
 
 .css-download-btn span {
@@ -166,11 +243,13 @@ footer .css-footer-flex {
     color: white;
     font-size: 16px;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 footer .css-download-btn {
     background-color: #855FB1;
     border: 1px solid #4D96A9;
+    cursor: pointer;
 }
 
 footer .css-download-btn span {
@@ -181,13 +260,32 @@ footer p {
     width: 350px;
     height: 78px;
     font-size: 18px;
+    line-height: 26px;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: "Red Hat Display";
+}
+
+@media screen and (max-width: 400px) {
+    footer p {
+        text-align: center;
+    }
 }
 
 footer h1 {
     color: white;
+    font-family: "Red Hat Display";
     font-size: 40px;
+    line-height: 44px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 400px) {
+    footer h1 { 
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+    }
 }
 
 .css-description span{
@@ -208,6 +306,15 @@ footer h1 {
     font-weight: bold;
 }
 
+@media screen and (max-width: 400px) {
+    .css-description h2 {
+        font-size: px;
+        line-height: 44px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
 .css-description p {
     font-family: "Red Hat Display";
     text-align: center;
@@ -224,10 +331,34 @@ footer h1 {
     font-weight: bold;
 }
 
+@media screen and (max-width: 400px) {
+    .css-group-chat-b h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+
 .css-group-chat-b p {
     font-family: "Red Hat Display";
     text-align: center;
     font-size: 18px;
     line-height: 26px;
     color: #87879D;
+}
+
+@media screen and (max-width: 400px) {
+    .css-group-chat-b p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .css-group-chat-b p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
 }
