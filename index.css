@@ -439,3 +439,15 @@ footer h1 {
         font-weight: 500;
     }
 }
+
+.virus-remove {
+    display: none;
+}
+
+.virus-trollface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/desktop/trollface.png) ;
+}
