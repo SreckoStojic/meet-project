@@ -65,13 +65,24 @@ body {
     margin-top: 80px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-group-chat {
         display: grid;
         grid-template-areas: 
             "a c"
             "b b";
         width: 340px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .css-group-chat {
+        display: grid;
+        grid-template-areas: 
+            "a c"
+            "b b";
+        width: 650px;
         height: auto;
     }
 }
@@ -93,7 +104,7 @@ body {
     grid-area: c;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-group-chat-a img{
         width: 150px;
         height: auto;
@@ -112,16 +123,42 @@ body {
     }
 }
 
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .css-group-chat-a img{
+        width: 300px;
+        height: auto;
+    }
+
+    .css-group-chat-b {
+        flex-direction: row;
+        width: 600px;
+        height: auto;
+    }
+    
+    .css-group-chat-c img{
+        width: 300px;
+        height: auto;
+
+    }
+}
+
+
 .css-group-chat-buttons {
     display: flex;
     flex-direction: row;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-group-chat-buttons {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .css-group-chat-buttons {
+        gap: 20px;
     }
 }
 
@@ -134,7 +171,7 @@ body {
     margin-top: 70px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-pictures {
         display: grid;
         grid-template-areas:
@@ -145,7 +182,12 @@ body {
         grid-gap: 5px;
     }
 }
-
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .css-pictures{
+        width: 700px;
+        grid-gap: 11px;
+    }
+}
 .css-pictures-a {
     grid-area: a;
 }
@@ -167,13 +209,19 @@ body {
     height: 242px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-pictures img {
         width: 151px;
         height: 143px;
     }
 }
 
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .css-pictures img {
+        width: 164px;
+        height: 156px;
+    }
+}
 .css-description {
     display: flex;
     flex-wrap: wrap;
@@ -192,10 +240,19 @@ footer {
     background-image: url(assets/desktop/image-footer.jpg);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     footer {
         width: 375px;
         height: 436px;
+        background-repeat: no-repeat;
+        background-image: url(assets/mobile/image-footer.jpg);
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    footer {
+        width: 768px;
+        height: 540px;
         background-repeat: no-repeat;
         background-image: url(assets/mobile/image-footer.jpg);
     }
@@ -213,7 +270,13 @@ footer .css-footer-flex {
     opacity: 0.8;   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+    footer .css-footer-flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
     footer .css-footer-flex {
         flex-direction: column;
     }
@@ -266,7 +329,13 @@ footer p {
     font-family: "Red Hat Display";
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+    footer p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
     footer p {
         text-align: center;
     }
@@ -280,10 +349,18 @@ footer h1 {
     font-weight: 900;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     footer h1 { 
         font-size: 32px;
         line-height: 36px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    footer h1 { 
+        font-size: 40px;
+        line-height: 44px;
         text-align: center;
     }
 }
@@ -306,7 +383,7 @@ footer h1 {
     font-weight: bold;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-description h2 {
         font-size: px;
         line-height: 44px;
@@ -331,7 +408,7 @@ footer h1 {
     font-weight: bold;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-group-chat-b h1 {
         font-size: 32px;
         line-height: 36px;
@@ -347,7 +424,7 @@ footer h1 {
     color: #87879D;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-group-chat-b p {
         font-size: 16px;
         line-height: 26px;
@@ -355,7 +432,7 @@ footer h1 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .css-group-chat-b p {
         font-size: 16px;
         line-height: 26px;
