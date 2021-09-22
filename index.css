@@ -64,6 +64,7 @@ body {
     height: 358px;
     width: 1472px;
     margin-top: 80px;
+    margin-left: -50px;
 }
 
 @media screen and (max-width: 450px) {
@@ -74,6 +75,7 @@ body {
             "b b";
         width: 340px;
         height: auto;
+        margin-left: 0px;
     }
 }
 
@@ -85,12 +87,38 @@ body {
             "b b";
         width: 650px;
         height: auto;
+        margin-left: 0px;
     }
 }
 
+
+.css-grid-group-a {
+    grid-area: a;
+    display: grid;
+    grid-auto-columns: 110px;
+    grid-auto-rows: 110px;
+    margin-left: -50px;
+    margin-top: -30px;
+}
+
+.css-grid-group-a img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-top: -20px;
+}
+
+.grid-group-a-1 {grid-column: 2; grid-row: 2; margin-top: 10px;}
+.grid-group-a-2 {grid-column: 2; grid-row: 4; margin-top: -70px;}
+.grid-group-a-3 {grid-column: 3; grid-row: 2; margin-top: -40px; margin-left: 30px; }
+.grid-group-a-4 {grid-column: 3; grid-row: 4; margin-top: -120px; margin-left: 30px; }
+.grid-group-a-5 {grid-column: 4; grid-row: 2; margin-top: 10px; margin-left: 60px;}
+.grid-group-a-6 {grid-column: 4; grid-row: 4; margin-top: -70px; margin-left: 60px;}
+
+/*
 .css-group-chat-a {
     grid-area: a;
-}
+}*/
 
 .css-group-chat-b {
     grid-area: b;
@@ -99,8 +127,113 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 50px;
+    margin-top: -50px;
+    height: 400px;
 }
 
+
+.css-grid-group-c {
+    grid-area: c;
+    display: grid;
+    grid-auto-columns: 110px;
+    grid-auto-rows: 110px;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.css-grid-group-c img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-top: -20px;
+}
+
+.grid-group-c-7 {grid-column: 2; grid-row: 1; margin-top: 10px;}
+.grid-group-c-8 {grid-column: 2; grid-row: 3; margin-top: -70px;}
+.grid-group-c-9 {grid-column: 3; grid-row: 2; margin-top: -40px; margin-left: 30px; }
+.grid-group-c-10 {grid-column: 3; grid-row: 4; margin-top: -120px; margin-left: 30px; }
+.grid-group-c-11 {grid-column: 4; grid-row: 1; margin-top: 10px; margin-left: 60px;}
+.grid-group-c-12 {grid-column: 4; grid-row: 3; margin-top: -70px; margin-left: 60px;}
+
+
+@media screen and (max-width: 450px) {
+    
+    .css-grid-group-a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .css-grid-group-a {
+        margin-left: -80px;
+        grid-auto-rows: 80px;
+        grid-auto-columns: 40px;
+    }
+
+    .css-grid-group-c {
+        margin-left: 0px;
+        grid-auto-rows: 80px;
+        grid-auto-columns: 40px;
+    }
+
+    .css-grid-group-c img{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .css-group-chat-b {
+        flex-direction: row;
+        width: 340px;
+        height: auto;
+        margin-top: -150px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    /*.css-group-chat-a img{
+        width: 300px;
+        height: auto;
+    }*/
+
+    .css-grid-group-a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .css-grid-group-a {
+        margin-left: -100px;
+        grid-auto-rows: 120px;
+        grid-auto-columns: 80px;
+    }
+
+    .css-grid-group-c {
+        margin-top: 60px;
+        grid-auto-rows: 120px;
+        grid-auto-columns: 80px;
+    }
+
+    .css-grid-group-c img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .css-group-chat-b {
+        flex-direction: row;
+        width: 600px;
+        height: auto;
+        margin-top: -140px;
+        margin-left: 0px;
+    }
+    /*
+    .css-group-chat-c img{
+        width: 300px;
+        height: auto;
+
+    }*/
+}
+/*
 .css-group-chat-c {
     grid-area: c;
 }
@@ -142,7 +275,7 @@ body {
 
     }
 }
-
+*/
 
 .css-group-chat-buttons {
     display: flex;
