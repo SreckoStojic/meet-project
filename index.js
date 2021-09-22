@@ -1,5 +1,5 @@
-const aboutBtn = document.querySelector(".css-about-btn");
-const downloadBtn = document.querySelector(".css-download-btn");
+const aboutBtn = document.querySelector(".js-about-btn");
+const downloadBtn = document.querySelector(".js-download-btn");
 
 var mainDiv = document.querySelector(".css-main");
 var body = document.querySelector("body");
